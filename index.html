@@ -90,7 +90,7 @@
                         <div class="artist-presentation col-12 col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Nombre del artista</h5>
+                                    <h5 class="card-title text-center">Uriel Padilla</h5>
                                     <p class="card-text">Hola mi nombre es Fulanito, sigueme en mis redes sociales: <i class="fa fa-hand-point-down" area-hidden="true"></i></p>
                                     <a href="#" class="btn btn-primary d-block" type="button">Instagram <i class="fa fa-instagram"></i></a>
                                     <br>
@@ -187,8 +187,19 @@
             <!-- Location Section -->
             <section id="location">
                 <h1 class="text-center">¿Donde nos encontramos?</h1>
-                <div class="col-12 col-sm-6">
-                    <div id="map" style="width:100%; height:400px;"></div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-sm-6">
+                        <div id="map" style="width:100%; height:400px;"></div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Ciudadela Real De Minas</h5>
+                                <p class="card-text">Adentro del Conjunto Residencial Plaza Mayor, Entrada 14, local 102.</p>
+                                <a href="https://instagram.com/wukongtattoostudio" target="_blank" class="btn btn-primary d-block" type="button">Síguenos en Instagram <i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -199,6 +210,17 @@
                 Wukong Tattoo Studio
             </div>
         </footer>
+        <script>
+            function initMap() {
+              var location = {lat: 7.10358246203411, lng: -73.12433187332529};
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 12, center: location});
+              var marker = new google.maps.Marker({position: location, map: map});
+            }
+          </script>
+          <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT4po6TPPnk1HjCQCZNHJscFmw3ELssX4&callback=initMap">
+          </script>          
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
